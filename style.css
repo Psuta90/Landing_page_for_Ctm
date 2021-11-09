@@ -1,0 +1,494 @@
+body {
+  font-family: "Jost", sans-serif;
+}
+
+.hero-right {
+  position: absolute;
+  max-width: 500px;
+  max-height: 406px;
+  width: 100%;
+  height: auto;
+  background: #f6bb0a;
+  border-radius: 0px 0px 50px 50px;
+  top: 0px;
+  right: 0px;
+  animation: slidein-down 2s;
+}
+
+.hero-right img {
+  animation: slidein-right 4s forwards;
+}
+
+.hero-left {
+  width: 1065px;
+  height: auto;
+
+  background: #3dbbbb;
+  border-radius: 0px 0px 50px 0px;
+
+  animation-name: hero-left;
+  animation-duration: 2s;
+}
+
+.text-hero {
+  position: absolute;
+  width: 736px;
+  height: auto;
+  left: 38px;
+  top: 100px;
+  font-size: 72px;
+  line-height: 104px;
+  font-style: normal;
+  font-weight: bold;
+  animation: slidein 7s;
+
+  color: #ffffff;
+}
+
+.subtext-hero {
+  position: absolute;
+  width: 727px;
+  height: 104px;
+  left: 38px;
+  top: 400px;
+
+  font-style: normal;
+  font-weight: normal;
+  font-size: 36px;
+  line-height: 52px;
+  color: #ffffff;
+  animation: slidein 10s;
+}
+
+@keyframes hero-left {
+  0% {
+    width: 0px;
+  }
+
+  100% {
+    width: 1065px;
+  }
+}
+
+@keyframes slidein {
+  0% {
+    margin-left: -900px;
+  }
+  20% {
+    margin-left: -900px;
+  }
+  35% {
+    margin-left: 0px;
+  }
+  100% {
+    margin-left: 0px;
+  }
+}
+@keyframes slidein-right {
+  0% {
+    margin-left: 700px;
+  }
+  100% {
+    margin-left: 0px;
+  }
+}
+@keyframes slidein-down {
+  0% {
+    margin-top: -500px;
+  }
+  100% {
+    margin-top: 0px;
+  }
+}
+
+nav ul li a {
+  margin: 10px;
+}
+
+.our-service {
+  width: 100%;
+  height: auto;
+
+  background: #ffffff;
+  box-shadow: 0px 7px 1px 7px rgba(0, 0, 0, 0.1);
+  border-radius: 50px;
+}
+
+.circle {
+  width: 122px;
+  height: 122px;
+  border-radius: 100%;
+  background: #f6bb0a;
+}
+.circle img {
+  width: 100%;
+  height: auto;
+  position: relative;
+  top: 40%;
+  transform: translate(0%, -50%);
+}
+.circle1 {
+  width: 122px;
+  height: 122px;
+  border-radius: 100%;
+  background: #f6bb0a;
+}
+.circle1 img {
+  width: 100%;
+  height: auto;
+  position: relative;
+  top: 50%;
+  left: 3%;
+  transform: translate(0%, -50%);
+}
+.circle2 {
+  width: 122px;
+  height: 122px;
+  border-radius: 100%;
+  background: #f6bb0a;
+}
+
+.circle2 img {
+  width: 100%;
+  height: auto;
+  position: relative;
+  top: 50%;
+  transform: translate(0%, -50%);
+}
+
+.animated-icon2 {
+  width: 30px;
+  height: 20px;
+  position: relative;
+  margin: 0px;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transition: 0.5s ease-in-out;
+  -moz-transition: 0.5s ease-in-out;
+  -o-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+  cursor: pointer;
+}
+.animated-icon2 span {
+  display: block;
+  position: absolute;
+  height: 3px;
+  width: 100%;
+  border-radius: 9px;
+  opacity: 1;
+  left: 0;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transition: 0.25s ease-in-out;
+  -moz-transition: 0.25s ease-in-out;
+  -o-transition: 0.25s ease-in-out;
+  transition: 0.25s ease-in-out;
+}
+.animated-icon2 span {
+  background: black;
+}
+
+.animated-icon2 span:nth-child(1) {
+  top: 0px;
+}
+
+.animated-icon2 span:nth-child(2),
+.animated-icon2 span:nth-child(3) {
+  top: 10px;
+}
+
+.animated-icon2 span:nth-child(4) {
+  top: 20px;
+}
+
+.animated-icon2.open span:nth-child(1) {
+  top: 11px;
+  width: 0%;
+  left: 50%;
+}
+
+.animated-icon2.open span:nth-child(2) {
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.animated-icon2.open span:nth-child(3) {
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+
+.animated-icon2.open span:nth-child(4) {
+  top: 11px;
+  width: 0%;
+  left: 50%;
+}
+
+.navbar-toggler:focus {
+  box-shadow: none;
+}
+
+.navbar-toggler {
+  border: none;
+}
+
+@media screen and (min-width: 1100px) {
+  .hero-right {
+    max-width: 500px;
+    max-height: 406px;
+    width: 100%;
+    height: auto;
+  }
+
+  .hero-left {
+    max-width: 1065px;
+    width: 100%;
+    height: 574px;
+  }
+
+  .our-service {
+    width: 30%;
+  }
+
+  .subtext-hero {
+    margin-top: 3rem !important;
+  }
+  .bg-dark {
+    background-color: #3dbbbb !important;
+  }
+
+  .image-hero-right-mobile {
+    display: none;
+  }
+
+  .about {
+    background: url("../Projectan-sundung/Asset/Gambar/vector-12.svg") no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1099px) {
+  .hero-right {
+    max-width: 400px;
+    max-height: 400px;
+    width: 100%;
+    height: auto;
+  }
+  .hero-left {
+    max-width: 800px;
+    width: 100%;
+    height: 574px;
+  }
+
+  .text-hero {
+    padding-top: 50px;
+    width: 70%;
+    height: auto;
+    position: static;
+    font-size: calc(2em + 2.4vw) !important;
+    line-height: 1.5em;
+    height: auto;
+  }
+  .subtext-hero {
+    position: static;
+    width: 99%;
+    font-size: calc(1.125em + 1vw) !important;
+    line-height: 40px;
+    padding-top: 30px;
+  }
+
+  .bg-dark {
+    background-color: #3dbbbb !important;
+  }
+
+  .image-hero-right-mobile {
+    display: none;
+  }
+
+  .our-service {
+    width: 30%;
+  }
+
+  .about {
+    background: url("Asset/Gambar/vector-12.svg") no-repeat;
+    width: 100%;
+    background-size: cover;
+    height: auto;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .hero-right {
+    display: none;
+  }
+  .hero-left {
+    display: none;
+    animation: none;
+  }
+
+  .bg-dark {
+    background-color: transparent !important;
+  }
+
+  .text-hero {
+    padding-top: 50px;
+    width: 90%;
+    height: auto;
+    position: static;
+    font-size: calc(2em + 2vw) !important;
+    line-height: 1.5em;
+    height: auto;
+  }
+  .subtext-hero {
+    position: static;
+    width: 99%;
+    font-size: calc(1.125em + 1vw) !important;
+    line-height: 40px;
+    padding-top: 30px;
+  }
+
+  .our-service {
+    width: 40%;
+  }
+  .hero-left-mobile {
+    display: block;
+    background: url("Asset/Gambar/vector-4.svg") no-repeat;
+    width: 100%;
+    height: auto;
+    background-size: cover;
+  }
+
+  .about {
+    background: url("Asset/Gambar/vector-12.svg") no-repeat;
+    width: 100%;
+    background-size: cover;
+    height: auto;
+  }
+}
+
+@media screen and (min-width: 576px) and (max-width: 767px) {
+  .hero-right {
+    display: none;
+  }
+
+  .hero-left {
+    display: none;
+    animation: none;
+  }
+
+  .hero-left-mobile {
+    display: block;
+    background: url("Asset/Gambar/vector-4.svg") no-repeat;
+    width: 100%;
+    height: 400px;
+    background-size: cover;
+  }
+
+  .our-service {
+    width: 40%;
+  }
+
+  .text-hero {
+    padding-top: 50px;
+    width: 90%;
+    height: auto;
+    position: static;
+    font-size: calc(1.8em + 1vw) !important;
+    line-height: 1.5em;
+    height: auto;
+  }
+  .subtext-hero {
+    position: static;
+    width: 99%;
+    font-size: calc(1.125em + 1vw) !important;
+    line-height: 40px;
+  }
+
+  .bg-dark {
+    background-color: transparent !important;
+  }
+  .about {
+    background: url("Asset/Gambar/vector-12.svg") no-repeat;
+    width: 100%;
+    background-size: cover;
+    height: auto;
+  }
+}
+
+@media screen and (min-width: 360px) and (max-width: 575px) {
+  .hero-right {
+    display: none;
+    width: 0px;
+    height: 0px;
+  }
+  .hero-left {
+    display: none;
+    animation: none;
+  }
+
+  .our-service {
+    width: 80%;
+  }
+
+  .bg-dark {
+    background-color: transparent !important;
+  }
+
+  .hero-left-mobile {
+    display: block;
+    background: url("Asset/Gambar/vector-4.svg") no-repeat;
+    width: 100%;
+    height: 400px;
+    background-size: cover;
+  }
+
+  .image-about-desktop {
+    display: none;
+  }
+
+  .about {
+    background: url("../Projectan-sundung/Asset/Gambar/vector-12.svg");
+    background-size: cover;
+    width: 100%;
+    height: auto;
+  }
+
+  .text-hero {
+    padding-top: 50px;
+    width: 90%;
+    height: auto;
+    position: static;
+    font-size: calc(1.8em + 1vw) !important;
+    line-height: 1.5em;
+    height: auto;
+  }
+  .subtext-hero {
+    position: static;
+    width: 99%;
+    font-size: calc(1rem + 1vw) !important;
+    line-height: 40px;
+  }
+
+  .subtext-about {
+    text-align: start;
+  }
+  .subtext-visi {
+    text-align: start;
+  }
+  .subtext-misi {
+    text-align: start;
+  }
+
+  .contact-text {
+    font-size: calc(1rem + 0.5vw) !important;
+  }
+}
